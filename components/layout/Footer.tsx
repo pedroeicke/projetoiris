@@ -49,8 +49,7 @@ export function Footer() {
                   WhatsApp
                 </a>
               </li>
-              <li className="py-2">{site.email}</li>
-              <li className="py-2">{site.instagram}</li>
+              {/* e-mail e Instagram entram depois (placeholders pendentes) */}
             </ul>
           </div>
         </div>

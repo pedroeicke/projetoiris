@@ -11,7 +11,7 @@ export const DEFAULT_DESCRIPTION =
 export const baseMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "íris — psicologia para gênero, sexualidade e identidade",
+    default: "íris · Um lugar para ser visto por inteiro",
     template: "%s · íris",
   },
   description: DEFAULT_DESCRIPTION,
@@ -40,12 +40,12 @@ export const baseMetadata: Metadata = {
     locale: "pt_BR",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: "íris — psicologia para gênero, sexualidade e identidade",
+    title: "íris · Um lugar para ser visto por inteiro",
     description: DEFAULT_DESCRIPTION,
   },
   twitter: {
     card: "summary_large_image",
-    title: "íris — psicologia para gênero, sexualidade e identidade",
+    title: "íris · Um lugar para ser visto por inteiro",
     description: DEFAULT_DESCRIPTION,
   },
   category: "health",
