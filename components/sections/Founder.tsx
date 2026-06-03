@@ -1,23 +1,45 @@
 import Image from "next/image";
 import { founder } from "@/content/site";
-import { Section } from "@/components/ui/Section";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Reveal } from "@/components/ui/Reveal";
 
 export function Founder() {
   return (
-    <Section
+    <section
       id="quem-atende"
-      tone="cream"
       aria-labelledby="founder-title"
-      bgImage="/fundocarol.png"
-      bgClassName="opacity-45"
+      className="relative scroll-mt-24 overflow-hidden bg-[#F9EEDA] px-5 py-20 text-ink sm:px-8 sm:py-24 lg:py-28"
     >
-      <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+      {/* desktop: fundo botânico completo */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 hidden select-none bg-[url('/fundocarol.png')] bg-cover bg-center bg-no-repeat opacity-45 lg:block"
+      />
+      {/* mobile/tablet: planta no topo e na base da seção */}
+      <Image
+        src="/planta1.png"
+        alt=""
+        aria-hidden
+        width={792}
+        height={941}
+        sizes="12rem"
+        className="pointer-events-none absolute left-0 top-0 z-0 w-[46%] max-w-[12rem] select-none opacity-60 lg:hidden"
+      />
+      <Image
+        src="/planta2.png"
+        alt=""
+        aria-hidden
+        width={733}
+        height={941}
+        sizes="12rem"
+        className="pointer-events-none absolute bottom-0 right-0 z-0 w-[46%] max-w-[12rem] -scale-x-100 select-none opacity-60 lg:hidden"
+      />
+
+      <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
         {/* Foto da Carolina em máscara orgânica */}
         <Reveal className="order-2 lg:order-1">
           <figure className="relative mx-auto max-w-sm">
-            <div className="mask-petal relative z-10 aspect-[4/5] w-full overflow-hidden bg-creamDeep shadow-warm-lg ring-1 ring-ink/10">
+            <div className="mask-petal relative z-10 aspect-[4/5] w-full overflow-hidden bg-creamDeep shadow-warm ring-1 ring-ink/10">
               <Image
                 src="/carolsentada2.png"
                 alt={founder.photoAlt}
@@ -63,6 +85,6 @@ export function Founder() {
           </p>
         </Reveal>
       </div>
-    </Section>
+    </section>
   );
 }

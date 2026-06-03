@@ -15,8 +15,6 @@ export function Section({
   children,
   bgImage,
   bgClassName,
-  bgPosition = "center",
-  bgSize = "cover",
   "aria-labelledby": labelledBy,
 }: {
   id?: string;
@@ -24,9 +22,8 @@ export function Section({
   className?: string;
   children: React.ReactNode;
   bgImage?: string;
+  /** classes do fundo — defina tamanho/posição aqui (ex.: bg-contain lg:bg-cover) */
   bgClassName?: string;
-  bgPosition?: React.CSSProperties["backgroundPosition"];
-  bgSize?: React.CSSProperties["backgroundSize"];
   "aria-labelledby"?: string;
 }) {
   return (
@@ -42,11 +39,7 @@ export function Section({
       {bgImage && (
         <div
           aria-hidden="true"
-          style={{
-            backgroundImage: `url(${bgImage})`,
-            backgroundPosition: bgPosition,
-            backgroundSize: bgSize,
-          }}
+          style={{ backgroundImage: `url(${bgImage})` }}
           className={cn(
             "pointer-events-none absolute inset-0 select-none bg-no-repeat",
             bgClassName,

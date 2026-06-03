@@ -25,12 +25,18 @@ export function Hero() {
       aria-labelledby="hero-title"
       className="sun-glow relative overflow-hidden px-5 pb-24 pt-16 sm:px-8 sm:pb-28 sm:pt-20 lg:pb-36 lg:pt-24"
     >
+      {/* mobile/tablet: imagem vertical da íris (flor embaixo, topo livre) */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[#F3EBDC] bg-[url('/fundohero.png')] bg-cover bg-center bg-no-repeat"
+        className="pointer-events-none absolute inset-0 bg-[#F3EBDC] bg-[url('/imgheromb.png')] bg-cover bg-bottom bg-no-repeat opacity-[0.12] lg:hidden"
+      />
+      {/* desktop: fundo da íris com raios */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 hidden bg-[#F3EBDC] bg-[url('/fundohero.png')] bg-cover bg-center bg-no-repeat lg:block"
       />
 
-      <div className="relative z-10 mx-auto flex max-w-6xl items-center lg:min-h-[38rem]">
+      <div className="relative z-10 mx-auto flex max-w-6xl flex-col lg:min-h-[38rem] lg:flex-row lg:items-center">
         <motion.div
           variants={reduce ? undefined : container}
           initial={reduce ? undefined : "hidden"}
@@ -71,15 +77,14 @@ export function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Carolina, de pé na luz — ancorada no rodapé do hero (cutout sem fundo) */}
+        {/* Carolina, de pé na luz (cutout) — só no desktop; no mobile a Carol
+            sai do hero (preferência da cliente). */}
         <motion.div
           initial={reduce ? undefined : { opacity: 0, y: 24 }}
           animate={reduce ? undefined : { opacity: 1, y: 0 }}
           transition={{ duration: 1.1, ease: EASE_WARM, delay: 0.2 }}
-          className="pointer-events-none absolute -right-4 -bottom-36 z-0 hidden h-[46rem] w-[34rem] lg:block xl:h-[48rem] xl:w-[36rem]"
+          className="pointer-events-none absolute -bottom-36 -right-4 z-0 hidden h-[46rem] w-[34rem] lg:block xl:h-[48rem] xl:w-[36rem]"
         >
-          {/* luz âmbar quente atrás dela */}
-          <div className="mask-petal absolute inset-x-4 bottom-16 top-8 bg-gradient-to-br from-amber/55 via-salmon/25 to-transparent blur-2xl" />
           <Image
             src="/carolsfnd.png"
             alt="Carolina Franco Brito, psicóloga fundadora da íris"
