@@ -1,13 +1,21 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/seo";
+import { generoPage } from "@/content/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const now = new Date();
   return [
     {
       url: SITE_URL,
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "monthly",
       priority: 1,
+    },
+    {
+      url: `${SITE_URL}${generoPage.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
   ];
 }

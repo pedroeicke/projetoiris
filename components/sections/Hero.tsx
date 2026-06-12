@@ -25,12 +25,12 @@ export function Hero() {
       aria-labelledby="hero-title"
       className="sun-glow relative overflow-hidden px-5 pb-24 pt-16 sm:px-8 sm:pb-28 sm:pt-20 lg:pb-36 lg:pt-24"
     >
-      {/* mobile/tablet: imagem vertical da íris (flor embaixo, topo livre) */}
+      {/* mobile/tablet: imagem vertical da Íris (flor embaixo, topo livre) */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 bg-[#F3EBDC] bg-[url('/imgheromb.png')] bg-cover bg-bottom bg-no-repeat opacity-[0.12] lg:hidden"
       />
-      {/* desktop: fundo da íris com raios */}
+      {/* desktop: fundo da Íris com raios */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 hidden bg-[#F3EBDC] bg-[url('/fundohero.png')] bg-cover bg-center bg-no-repeat lg:block"
@@ -87,7 +87,7 @@ export function Hero() {
         >
           <Image
             src="/carolsfnd.png"
-            alt="Carolina Franco Brito, psicóloga fundadora da íris"
+            alt="Carolina Franco Brito, psicóloga fundadora da Íris"
             fill
             sizes="576px"
             className="object-contain object-bottom drop-shadow-[0_24px_40px_rgba(55,50,42,0.18)]"

@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "íris — psicologia para gênero, sexualidade e identidade";
+export const alt = "Íris — psicologia para gênero, sexualidade e identidade";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -41,7 +41,7 @@ export default function OgImage() {
             fontFamily: "Georgia, serif",
           }}
         >
-          íris
+          Íris
         </div>
         <div
           style={{

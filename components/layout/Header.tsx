@@ -45,13 +45,13 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-5 py-3.5 sm:px-8">
         {/* Marca */}
         <Link
-          href="#top"
+          href="/#top"
           className="group flex items-center focus-visible:outline-2"
-          aria-label="íris — início"
+          aria-label="Íris — início"
         >
           <Image
             src="/LOGOIRIS.png"
-            alt="íris"
+            alt="Íris"
             width={1536}
             height={1024}
             priority
@@ -62,23 +62,31 @@ export function Header() {
 
         {/* Nav desktop */}
         <nav aria-label="Navegação principal" className="hidden lg:block">
-          <ul className="flex items-center gap-7">
-            {nav.map((item) => (
-              <li key={item.href}>
-                <a
-                  href={item.href}
-                  className="link-grow text-sm font-medium text-ink/80 hover:text-teal"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
+          <ul className="flex items-center gap-5 xl:gap-6">
+            {nav.map((item) => {
+              const isRoute = item.href.startsWith("/") && !item.href.includes("#");
+              const cls =
+                "link-grow text-sm font-medium text-ink/80 hover:text-teal";
+              return (
+                <li key={item.href}>
+                  {isRoute ? (
+                    <Link href={item.href} className={cls}>
+                      {item.label}
+                    </Link>
+                  ) : (
+                    <a href={item.href} className={cls}>
+                      {item.label}
+                    </a>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </nav>
 
         <div className="flex items-center gap-3">
           <Button
-            href="#contato"
+            href="/#contato"
             variant="primary"
             className="hidden px-5 py-2.5 text-sm sm:inline-flex"
           >
@@ -124,17 +132,32 @@ export function Header() {
           className="border-t border-ink/10 bg-cream/95 backdrop-blur-md lg:hidden"
         >
           <ul className="mx-auto flex max-w-6xl flex-col px-5 py-3 sm:px-8">
-            {nav.map((item) => (
-              <li key={item.href}>
-                <a
-                  href={item.href}
-                  onClick={() => setOpen(false)}
-                  className="block border-b border-ink/8 py-3.5 text-base font-medium text-ink/85 hover:text-teal"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
+            {nav.map((item) => {
+              const isRoute = item.href.startsWith("/") && !item.href.includes("#");
+              const cls =
+                "block border-b border-ink/8 py-3.5 text-base font-medium text-ink/85 hover:text-teal";
+              return (
+                <li key={item.href}>
+                  {isRoute ? (
+                    <Link
+                      href={item.href}
+                      onClick={() => setOpen(false)}
+                      className={cls}
+                    >
+                      {item.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={item.href}
+                      onClick={() => setOpen(false)}
+                      className={cls}
+                    >
+                      {item.label}
+                    </a>
+                  )}
+                </li>
+              );
+            })}
             <li className="pt-4">
               <Button
                 href={site.whatsapp}
@@ -142,7 +165,7 @@ export function Header() {
                 variant="primary"
                 className="w-full"
               >
-                Agendar uma conversa
+                Agendar primeira conversa
               </Button>
             </li>
           </ul>

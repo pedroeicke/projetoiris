@@ -60,23 +60,14 @@ export function Founder() {
           >
             {founder.title}
           </h2>
-          {/* Quebras só no desktop (lg+) para o texto não cair sobre as
-              flores do fundo no canto direito; no mobile o <br> some. */}
-          <p className="mt-5 max-w-prose text-lg leading-relaxed text-ink/85">
-            íris é fundada e conduzida por Carolina Franco Brito, psicóloga e
-            doutoranda em Psicologia pela UFSC, com produção acadêmica em gênero,{" "}
-            <br className="hidden lg:inline" />
-            sexualidades e identidade. Une o rigor de quem estuda o tema a{" "}
-            <br className="hidden lg:inline" />
-            fundo à escuta de quem acolhe sem julgamento.
-          </p>
-          <p className="mt-5 max-w-prose text-lg leading-relaxed text-ink/85">
-            O cuidado é construído com responsabilidade: supervisão{" "}
-            <br className="hidden lg:inline" />
-            clínica regular e formação contínua acompanham{" "}
-            <br className="hidden lg:inline" />
-            cada passo.
-          </p>
+          {founder.body.map((para, i) => (
+            <p
+              key={i}
+              className="mt-5 max-w-prose text-lg leading-relaxed text-ink/85"
+            >
+              {para}
+            </p>
+          ))}
           <p className="mt-7 font-display text-xl text-teal">
             {founder.name}
             <span className="ml-3 align-middle text-sm font-sans uppercase tracking-eyebrow text-inkSoft">

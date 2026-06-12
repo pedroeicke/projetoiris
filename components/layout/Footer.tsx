@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { footer, site } from "@/content/site";
+import Link from "next/link";
+import { footer, site, generoPage } from "@/content/site";
 
 export function Footer() {
   return (
@@ -10,7 +11,7 @@ export function Footer() {
           <div>
             <Image
               src="/LOGOIRISB.png"
-              alt="íris"
+              alt="Íris"
               width={1536}
               height={1024}
               sizes="240px"
@@ -30,6 +31,14 @@ export function Footer() {
             <p className="mt-2">{site.location}</p>
             <p className="mt-2">
               {site.founder} · {site.crp}
+            </p>
+            <p className="mt-3">
+              <Link
+                href={generoPage.slug}
+                className="link-grow inline-block py-1 !text-cream hover:!text-amber focus-visible:outline-paper"
+              >
+                Gênero, sexualidade e cuidado psicológico
+              </Link>
             </p>
           </div>
 
@@ -56,7 +65,7 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col gap-2 border-t border-cream/15 pt-6 text-xs text-cream/75 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} íris · {site.founder}. Todos os
+            © {new Date().getFullYear()} Íris · {site.founder}. Todos os
             direitos reservados.
           </p>
           <p>

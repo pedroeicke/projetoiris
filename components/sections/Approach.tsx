@@ -23,7 +23,7 @@ export function Approach() {
       id="abordagem"
       tone="cream"
       aria-labelledby="approach-title"
-      className="bg-[#F5ECDD]"
+      className="bg-[#F5EDDD]"
     >
       <Reveal className="max-w-2xl">
         <Eyebrow>A abordagem</Eyebrow>
@@ -61,7 +61,7 @@ export function Approach() {
         })}
       </Reveal>
 
-      {/* Divisor de marca — íris grande; topo some atrás das caixas (z-0) */}
+      {/* Divisor de marca — Íris grande; topo some atrás das caixas (z-0) */}
       <IrisDivider className="relative z-0 -mt-6 lg:-mt-12" />
 
       {/* Pilares — sobem sobre o creme vazio de baixo do divisor */}
