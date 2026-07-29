@@ -5,7 +5,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Reveal, RevealItem } from "@/components/ui/Reveal";
 
 // Ícone temático por situação (mesma ordem de audience.situations)
-const situationIcons = [Compass, Home, HandHeart, CloudRain, Users];
+const situationIcons = [Compass, Home, CloudRain, HandHeart, Users];
 
 export function Audience() {
   return (

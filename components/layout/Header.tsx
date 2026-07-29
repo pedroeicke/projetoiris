@@ -165,7 +165,7 @@ export function Header() {
                 variant="primary"
                 className="w-full"
               >
-                Agendar primeira conversa
+                Agendar primeira sessão
               </Button>
             </li>
           </ul>

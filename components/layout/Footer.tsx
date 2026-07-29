@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
-import { footer, site, generoPage } from "@/content/site";
+import { footer, site } from "@/content/site";
 
 export function Footer() {
   return (
@@ -22,23 +21,17 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Sobre */}
+          {/* Atendimento */}
           <div className="text-sm leading-relaxed text-cream/80">
             <p className="mb-3 text-xs font-semibold uppercase tracking-eyebrow text-amber">
-              A clínica
+              Atendimento
             </p>
-            <p>{footer.tagline}</p>
-            <p className="mt-2">{site.location}</p>
+            <p>Psicoterapia presencial e online</p>
             <p className="mt-2">
-              {site.founder} · {site.crp}
+              Florianópolis, SC · atendimento online em todo o Brasil
             </p>
-            <p className="mt-3">
-              <Link
-                href={generoPage.slug}
-                className="link-grow inline-block py-1 !text-cream hover:!text-amber focus-visible:outline-paper"
-              >
-                Gênero, sexualidade e cuidado psicológico
-              </Link>
+            <p className="mt-2">
+              {site.founder} · Psicóloga · {site.crp}
             </p>
           </div>
 

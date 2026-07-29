@@ -8,7 +8,7 @@
 const WHATSAPP_NUMBER = "5548988515774";
 // Mensagem pré-preenchida enviada ao abrir a conversa (tom da marca)
 const WHATSAPP_MESSAGE =
-  "Olá! Vim pelo site e gostaria de agendar uma primeira conversa. 🌱";
+  "Olá! Vim pelo site e gostaria de agendar uma primeira sessão. 🌱";
 
 export const site = {
   name: "Carolina Franco Brito",
@@ -36,13 +36,13 @@ export const nav = [
 ] as const;
 
 export const hero = {
-  eyebrow: "Gênero, sexualidade e cuidado psicológico",
+  eyebrow: "Psicoterapia",
   // a palavra entre * vira ênfase em itálico da Fraunces
   titleLead: "Um lugar para ser",
   titleEmphasis: "visto por inteiro",
   titleTrail: ".",
-  lead: "Atendimento psicológico para diferentes momentos da vida, com escuta ética e sensível às questões de gênero, sexualidade e identidade, sem patologizar e sem reduzir sua história a um rótulo.",
-  ctaPrimary: { label: "Agendar primeira conversa", href: "#contato" },
+  lead: "Atendimento psicológico para adolescentes e pessoas adultas, com uma escuta atenta à sua história, às suas relações e ao contexto em que você vive. Para compreender o que está difícil, atravessar mudanças e construir caminhos possíveis.",
+  ctaPrimary: { label: "Agendar primeira sessão", href: "#contato" },
   ctaSecondary: { label: "Conhecer a abordagem", href: "#abordagem" },
 } as const;
 
@@ -50,33 +50,33 @@ export const concept = {
   titleLead: "O que te atravessa",
   titleEmphasis: "merece escuta",
   titleTrail: ".",
-  body: "Na clínica, há espaço para trabalhar o que pesa, o que se repete e o que ainda não encontrou nome. Aqui, há um lugar de cuidado onde essas questões podem ganhar atenção, tempo e elaboração.",
+  body: "Na clínica, o que pesa, se repete ou ainda não encontrou palavras pode ganhar tempo, atenção e elaboração.",
 } as const;
 
 export const approach = {
-  title: "Antes de qualquer resposta, escuta.",
+  title: "Cada experiência tem seu próprio sentido.",
   intro:
-    "A psicoterapia não parte de fórmulas sobre quem você é, nem tenta encaixar sua experiência em uma explicação pronta.",
+    "Você não precisa chegar sabendo explicar tudo o que está vivendo. O trabalho terapêutico se constrói a partir do que faz sentido para você, ao longo dos encontros.",
   duo: [
     {
       title: "Sem patologização",
-      body: "Gênero, sexualidade e identidade podem fazer parte da sua história sem serem tratados como erro, desvio ou diagnóstico. Na clínica, essas experiências são acolhidas com cuidado e responsabilidade.",
+      body: "Gênero e sexualidade fazem parte da experiência humana e podem ocupar lugares diferentes na história de cada pessoa. Na terapia, essas experiências podem ser acolhidas com cuidado, sem julgamentos e sem a ideia de que precisam ser mudadas.",
     },
     {
       title: "Sem reducionismo",
-      body: "Você não se resume a uma identidade, a uma demanda ou a um sofrimento. É necessário considerar suas contradições, escolhas, relações e aquilo que há de próprio no modo como você vive sua vida.",
+      body: "A escuta não reduz ninguém a uma categoria, a uma demanda ou a um sofrimento. Contradições, escolhas, vínculos e contextos também fazem parte do trabalho clínico.",
     },
   ],
   pillars: [
     {
       n: "01",
       title: "Fundamentação",
-      body: "Pesquisa, formação e estudo contínuo sustentam o atendimento. A teoria orienta o cuidado, mas não apaga a singularidade de cada experiência.",
+      body: "Pesquisa e formação continuada sustentam o trabalho clínico. A teoria oferece referências, sem antecipar o sentido de cada experiência.",
     },
     {
       n: "02",
       title: "Tempo de elaboração",
-      body: "Cada processo tem seu próprio ritmo. A psicoterapia acompanha perguntas, mudanças e decisões à medida que elas podem ser formuladas no encontro clínico.",
+      body: "Cada pessoa tem seu próprio ritmo. Perguntas, mudanças e decisões podem ser trabalhadas à medida que encontram espaço para ser formuladas.",
     },
     {
       n: "03",
@@ -85,8 +85,8 @@ export const approach = {
     },
     {
       n: "04",
-      title: "Combinados terapêuticos",
-      body: "O início do atendimento envolve uma conversa sobre formato, frequência, honorários e possibilidades de acompanhamento.",
+      title: "Vínculo e diálogo",
+      body: "O acompanhamento é construído na relação terapêutica, com espaço para dúvidas, incômodos e ajustes ao longo do processo.",
     },
   ],
 } as const;
@@ -94,22 +94,22 @@ export const approach = {
 export const audience = {
   title: "Para quem busca um espaço de cuidado.",
   intro:
-    "Atendimento psicológico para adolescentes e pessoas adultas. Gênero, sexualidade e identidade podem aparecer no processo, mas não precisam ser a única razão para começar a terapia.",
+    "Cada pessoa chega à terapia por razões diferentes. O que tem sido vivido, sentido ou questionado pode ser trabalhado considerando também como gênero, sexualidade e contexto social atravessam nossas experiências.",
   situations: [
-    "Processos de descoberta, afirmação ou mudança",
-    "Conflitos familiares, rejeição ou falta de acolhimento",
-    "Momentos de vida que pedem escuta e cuidado",
-    "Ansiedade, tristeza, crises e outros sofrimentos cotidianos",
-    "Relações, escolhas e mudanças na forma de viver",
+    "Mudanças, escolhas e momentos de transição",
+    "Conflitos familiares e dificuldades nos vínculos",
+    "Ansiedade, tristeza, crises e sobrecarga",
+    "Sentimentos de não pertencimento e dificuldades de encontrar acolhimento",
+    "Dúvidas e mudanças na relação consigo e com os outros",
   ],
-  note: "Algumas questões chegam como ansiedade, tristeza, dúvida, cansaço ou conflito. Na clínica, elas podem ser cuidadas em relação com a história, os afetos e as condições concretas de vida.",
+  note: "Você não precisa saber nomear tudo para começar.",
 } as const;
 
 export const founder = {
-  title: "Entre pesquisa e clínica",
+  title: "Uma prática entre clínica e pesquisa",
   body: [
-    "Carolina Franco Brito é psicóloga, Mestre e Doutora em Psicologia pela UFSC. Sua pesquisa em gênero, sexualidade e identidade contribui para uma atuação atenta às formas como essas questões podem aparecer na vida psíquica e nas experiências de sofrimento.",
-    "A prática clínica é acompanhada por supervisão clínica regular e formação permanente, entendendo o atendimento psicológico como um trabalho que exige estudo, responsabilidade técnica e atualização constante.",
+    "Carolina Franco Brito é psicóloga, mestra e doutora em Psicologia pela UFSC. Sua trajetória acadêmica nos estudos de gênero, sexualidade e processos de subjetivação contribui para uma prática atenta às relações entre histórias pessoais e contextos sociais.",
+    "Sua prática clínica respeita a singularidade de cada percurso e não parte de respostas prontas sobre o que cada pessoa vive. O trabalho se orienta pelo compromisso ético com a autonomia de quem busca atendimento.",
   ],
   name: "Carolina Franco Brito",
   crp: "CRP 12/18469",
@@ -129,9 +129,9 @@ export const care = {
       value: "50 minutos · atendimento particular, sem convênios.",
     },
     {
-      label: "Primeiro contato",
+      label: "Primeira sessão",
       value:
-        "A conversa inicial serve para compreender sua demanda, apresentar o formato do atendimento e avaliar, com cuidado, as possibilidades de acompanhamento.",
+        "A primeira sessão já faz parte do processo terapêutico. É um momento para compreender o que você busca, apresentar o funcionamento do atendimento e avaliar se o acompanhamento faz sentido para você.",
     },
   ],
 } as const;
@@ -161,14 +161,14 @@ export const faq = {
     },
     {
       q: "Como eu começo?",
-      a: "Você pode agendar uma primeira conversa pelo WhatsApp. Esse encontro inicial serve para compreender sua demanda, apresentar o formato do atendimento e avaliar as possibilidades de início do processo.",
+      a: "Você pode agendar uma primeira sessão pelo WhatsApp. Esse encontro inicial serve para compreender sua demanda, apresentar o formato do atendimento e avaliar as possibilidades de início do processo.",
     },
   ],
 } as const;
 
 export const contact = {
   title: "Quando fizer sentido, você começa",
-  sub: "Marque uma primeira conversa. A partir daí, o tempo é seu.",
+  sub: "Marque um primeiro encontro. A partir daí, o tempo é seu.",
   ctaWhatsapp: "Agendar pelo WhatsApp",
   ctaDoctoralia: "Agendar pela Doctoralia",
 } as const;
@@ -231,5 +231,5 @@ export const generoPage = {
     },
   ],
   ctaTitle: "Quando fizer sentido, você começa",
-  ctaSub: "Marque uma primeira conversa pelo WhatsApp. A partir daí, o tempo é seu.",
+  ctaSub: "Marque um primeiro encontro pelo WhatsApp. A partir daí, o tempo é seu.",
 } as const;
