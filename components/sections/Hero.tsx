@@ -87,7 +87,7 @@ export function Hero() {
         >
           <Image
             src="/carolsfnd.png"
-            alt="Carolina Franco Brito, psicóloga fundadora da Íris"
+            alt="Carolina Franco Brito, psicóloga"
             fill
             sizes="576px"
             className="object-contain object-bottom drop-shadow-[0_24px_40px_rgba(55,50,42,0.18)]"

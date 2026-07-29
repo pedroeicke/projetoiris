@@ -47,11 +47,11 @@ export function Header() {
         <Link
           href="/#top"
           className="group flex items-center focus-visible:outline-2"
-          aria-label="Íris — início"
+          aria-label="Início"
         >
           <Image
             src="/LOGOIRIS.png"
-            alt="Íris"
+            alt="Logo"
             width={1536}
             height={1024}
             priority

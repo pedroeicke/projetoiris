@@ -7,11 +7,11 @@ export function Footer() {
     <footer className="relative overflow-hidden bg-tealDeep text-cream">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
-          {/* Marca + frase */}
+          {/* Logo + frase */}
           <div>
             <Image
               src="/LOGOIRISB.png"
-              alt="Íris"
+              alt="Logo"
               width={1536}
               height={1024}
               sizes="240px"
@@ -65,7 +65,7 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col gap-2 border-t border-cream/15 pt-6 text-xs text-cream/75 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} Íris · {site.founder}. Todos os
+            © {new Date().getFullYear()} {site.founder}. Todos os
             direitos reservados.
           </p>
           <p>

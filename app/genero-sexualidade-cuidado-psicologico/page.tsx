@@ -16,7 +16,7 @@ const TAGS = ["Psicoterapia", "Gênero e sexualidade", "Saúde mental", "LGBTQIA
 const PUBLISHED = "12/06/2026"; // data de publicação (editável)
 
 export const metadata: Metadata = {
-  title: { absolute: "Psicoterapia afirmativa LGBTQIA+ | Íris Psicologia" },
+  title: { absolute: "Psicoterapia afirmativa LGBTQIA+ | Carolina Franco Brito" },
   description: DESCRIPTION,
   alternates: { canonical: generoPage.slug },
   openGraph: {
@@ -24,12 +24,12 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: `${SITE_URL}${generoPage.slug}`,
     siteName: site.name,
-    title: "Psicoterapia afirmativa LGBTQIA+ | Íris Psicologia",
+    title: "Psicoterapia afirmativa LGBTQIA+ | Carolina Franco Brito",
     description: DESCRIPTION,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Psicoterapia afirmativa LGBTQIA+ | Íris Psicologia",
+    title: "Psicoterapia afirmativa LGBTQIA+ | Carolina Franco Brito",
     description: DESCRIPTION,
   },
 };
@@ -141,7 +141,7 @@ export default function GeneroSexualidadePage() {
                     {site.founder}
                   </p>
                   <p className="mt-1 text-sm leading-relaxed text-inkSoft">
-                    Psicóloga, mestre e doutoranda em Psicologia pela UFSC ·{" "}
+                    Psicóloga, Mestre e Doutora em Psicologia pela UFSC ·{" "}
                     {site.crp}
                   </p>
                 </div>

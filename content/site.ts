@@ -8,10 +8,10 @@
 const WHATSAPP_NUMBER = "5548988515774";
 // Mensagem pré-preenchida enviada ao abrir a conversa (tom da marca)
 const WHATSAPP_MESSAGE =
-  "Olá! Vim pelo site da Íris e gostaria de agendar uma primeira conversa. 🌱";
+  "Olá! Vim pelo site e gostaria de agendar uma primeira conversa. 🌱";
 
 export const site = {
-  name: "Íris",
+  name: "Carolina Franco Brito",
   tagline: "Psicoterapia · gênero, sexualidade e identidade",
   founder: "Carolina Franco Brito",
   crp: "CRP 12/18469",
@@ -36,7 +36,7 @@ export const nav = [
 ] as const;
 
 export const hero = {
-  eyebrow: "Psicoterapia · gênero, sexualidade e identidade",
+  eyebrow: "Gênero, sexualidade e cuidado psicológico",
   // a palavra entre * vira ênfase em itálico da Fraunces
   titleLead: "Um lugar para ser",
   titleEmphasis: "visto por inteiro",
@@ -50,7 +50,7 @@ export const concept = {
   titleLead: "O que te atravessa",
   titleEmphasis: "merece escuta",
   titleTrail: ".",
-  body: "Na clínica, há espaço para trabalhar o que pesa, o que se repete e o que ainda não encontrou nome. A Íris é um lugar de cuidado onde essas questões podem ganhar atenção, tempo e elaboração.",
+  body: "Na clínica, há espaço para trabalhar o que pesa, o que se repete e o que ainda não encontrou nome. Aqui, há um lugar de cuidado onde essas questões podem ganhar atenção, tempo e elaboração.",
 } as const;
 
 export const approach = {
@@ -108,13 +108,13 @@ export const audience = {
 export const founder = {
   title: "Entre pesquisa e clínica",
   body: [
-    "Íris é fundada e conduzida por Carolina Franco Brito, psicóloga, mestre e doutoranda em Psicologia pela UFSC. Sua pesquisa em gênero, sexualidade e identidade contribui para uma atuação atenta às formas como essas questões podem aparecer na vida psíquica e nas experiências de sofrimento.",
+    "Carolina Franco Brito é psicóloga, Mestre e Doutora em Psicologia pela UFSC. Sua pesquisa em gênero, sexualidade e identidade contribui para uma atuação atenta às formas como essas questões podem aparecer na vida psíquica e nas experiências de sofrimento.",
     "A prática clínica é acompanhada por supervisão clínica regular e formação permanente, entendendo o atendimento psicológico como um trabalho que exige estudo, responsabilidade técnica e atualização constante.",
   ],
   name: "Carolina Franco Brito",
   crp: "CRP 12/18469",
   photoAlt:
-    "Carolina Franco Brito, psicóloga fundadora da Íris, sentada em seu espaço de atendimento ao lado de uma planta",
+    "Carolina Franco Brito, psicóloga, sentada em seu espaço de atendimento ao lado de uma planta",
 } as const;
 
 export const care = {
@@ -140,7 +140,7 @@ export const faq = {
   title: "Antes de começar.",
   items: [
     {
-      q: "Preciso ser LGBTQIA+ para começar terapia na Íris?",
+      q: "Preciso ser LGBTQIA+ para começar terapia?",
       a: "Não. O atendimento é aberto a pessoas com diferentes demandas. Questões de gênero, sexualidade e identidade podem aparecer no processo, mas não precisam ser o motivo da procura.",
     },
     {
@@ -186,7 +186,7 @@ export const generoPage = {
   lead: "Uma psicoterapia atenta às experiências LGBTQIA+, sem reduzir a pessoa à sua identidade e sem tratar gênero ou sexualidade como problema em si.",
   intro: [
     "A psicoterapia pode ser um espaço para trabalhar sofrimento, relações, corpo, identidade, escolhas e momentos de vida. Para pessoas LGBTQIA+, esse processo muitas vezes envolve uma questão adicional: a necessidade de encontrar uma escuta que não trate gênero ou sexualidade como problema em si.",
-    "Na Íris, gênero, sexualidade e identidade podem aparecer no atendimento quando forem importantes para a sua história. Mas eles não precisam ser o motivo principal da procura. A terapia também pode ser sobre ansiedade, tristeza, família, trabalho, relações, luto, dúvidas, mudanças ou qualquer outra questão que esteja pedindo cuidado.",
+    "Na clínica, gênero, sexualidade e identidade podem aparecer no atendimento quando forem importantes para a sua história. Mas eles não precisam ser o motivo principal da procura. A terapia também pode ser sobre ansiedade, tristeza, família, trabalho, relações, luto, dúvidas, mudanças ou qualquer outra questão que esteja pedindo cuidado.",
     "A proposta é oferecer uma clínica atenta a essas experiências, sem reduzir a pessoa a uma identidade.",
   ],
   sections: [

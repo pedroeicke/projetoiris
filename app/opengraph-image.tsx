@@ -1,7 +1,8 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Íris — psicologia para gênero, sexualidade e identidade";
+export const alt =
+  "Carolina Franco Brito — psicologia para gênero, sexualidade e identidade";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -34,14 +35,14 @@ export default function OgImage() {
         />
         <div
           style={{
-            fontSize: 132,
+            fontSize: 84,
             fontWeight: 400,
             color: "#0A5A5E",
-            lineHeight: 1,
+            lineHeight: 1.05,
             fontFamily: "Georgia, serif",
           }}
         >
-          Íris
+          Carolina Franco Brito
         </div>
         <div
           style={{
