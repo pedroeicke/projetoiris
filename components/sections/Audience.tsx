@@ -29,6 +29,14 @@ export function Audience() {
           <p className="mt-6 max-w-prose border-l-2 border-ochre/60 pl-5 font-display text-lg italic leading-relaxed text-teal">
             {audience.note}
           </p>
+          <div className="mt-7 max-w-prose rounded-organic bg-paper p-6 shadow-warm ring-1 ring-ochre/20">
+            <p className="font-display text-xl font-normal leading-snug text-teal">
+              {audience.diversity.title}
+            </p>
+            <p className="mt-3 text-base leading-relaxed text-ink/80">
+              {audience.diversity.body}
+            </p>
+          </div>
         </Reveal>
 
         <Reveal stagger as="ul" className="flex flex-col justify-center gap-1">

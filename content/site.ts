@@ -103,7 +103,7 @@ export const approach = {
 export const audience = {
   title: "Para quem busca um espaço de cuidado.",
   intro:
-    "Cada pessoa chega à terapia por razões diferentes. O que tem sido vivido, sentido ou questionado pode ser trabalhado considerando também como gênero, sexualidade e contexto social atravessam nossas experiências.",
+    "Cada pessoa chega à terapia por razões diferentes. O que tem sido vivido, sentido ou questionado pode ser trabalhado considerando também como gênero, sexualidade e contexto social atravessam sua experiência.",
   situations: [
     "Mudanças, escolhas e momentos de transição",
     "Conflitos familiares e dificuldades nos vínculos",
@@ -112,6 +112,10 @@ export const audience = {
     "Dúvidas e mudanças na relação consigo e com os outros",
   ],
   note: "Você não precisa saber nomear tudo para começar.",
+  diversity: {
+    title: "Uma clínica aberta à diversidade.",
+    body: "Pessoas LGBTQIA+ são bem-vindas. O atendimento se orienta por uma escuta respeitosa.",
+  },
 } as const;
 
 export const founder = {
