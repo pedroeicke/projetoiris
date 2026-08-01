@@ -7,10 +7,10 @@ import { Footer } from "@/components/layout/Footer";
 import { Contact } from "@/components/sections/Contact";
 import { Reveal } from "@/components/ui/Reveal";
 import { generoPage, site } from "@/content/site";
-import { SITE_URL } from "@/lib/seo";
+import { OG_IMAGE, SITE_URL } from "@/lib/seo";
 
 const DESCRIPTION =
-  "Psicoterapia online e presencial em Florianópolis, com escuta ética e sensível às experiências LGBTQIA+, sem reduzir a pessoa à sua identidade.";
+  "Psicoterapia online e presencial na Grande Florianópolis, com escuta ética e sensível às experiências LGBTQIA+, sem reduzir a pessoa à sua identidade.";
 
 const TAGS = ["Psicoterapia", "Gênero e sexualidade", "Saúde mental", "LGBTQIA+"];
 const PUBLISHED = "12/06/2026"; // data de publicação (editável)
@@ -26,11 +26,13 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: "Psicoterapia afirmativa LGBTQIA+ | Carolina Franco Brito",
     description: DESCRIPTION,
+    images: [OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Psicoterapia afirmativa LGBTQIA+ | Carolina Franco Brito",
     description: DESCRIPTION,
+    images: [OG_IMAGE.url],
   },
 };
 

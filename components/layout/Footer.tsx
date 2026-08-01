@@ -28,7 +28,10 @@ export function Footer() {
             </p>
             <p>Psicoterapia presencial e online</p>
             <p className="mt-2">
-              Florianópolis, SC · atendimento online em todo o Brasil
+              Grande Florianópolis · Atendimento online em todo o Brasil
+            </p>
+            <p className="mt-2">
+              {site.address.full}
             </p>
             <p className="mt-2">
               {site.founder} · Psicóloga · {site.crp}
@@ -46,6 +49,9 @@ export function Footer() {
                   href={site.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-conversion-event="generate_lead"
+                  data-conversion-location="footer"
+                  data-conversion-method="whatsapp"
                   className="link-grow inline-block py-2 !text-cream hover:!text-amber focus-visible:outline-paper"
                 >
                   WhatsApp

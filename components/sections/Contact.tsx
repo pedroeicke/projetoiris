@@ -31,11 +31,25 @@ export function Contact() {
             href={site.whatsapp}
             external={isLinkReady(site.whatsapp)}
             variant="primary"
+            tracking={{
+              event: "generate_lead",
+              location: "contact_section",
+              method: "whatsapp",
+            }}
           >
             {contact.ctaWhatsapp}
           </Button>
           {isLinkReady(site.doctoralia) && (
-            <Button href={site.doctoralia} external variant="secondary">
+            <Button
+              href={site.doctoralia}
+              external
+              variant="secondary"
+              tracking={{
+                event: "generate_lead",
+                location: "contact_section",
+                method: "doctoralia",
+              }}
+            >
               {contact.ctaDoctoralia}
             </Button>
           )}

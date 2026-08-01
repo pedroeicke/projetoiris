@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
 
-/** Domínio definitivo pendente (docs/architecture.md). Ajustar antes do deploy. */
-export const SITE_URL = "https://iris.psi.br";
+export const SITE_URL = "https://irispsicologia.com";
 
 export const SITE_NAME = "Carolina Franco Brito";
 
 export const DEFAULT_DESCRIPTION =
-  "Clínica de psicologia para gênero, sexualidade e identidade. Escuta séria e calorosa, sem patologizar e sem pressa. Online no Brasil e presencial em Florianópolis.";
+  "Psicologia para gênero, sexualidade e identidade. Atendimento online no Brasil e presencial na Grande Florianópolis, com escuta ética.";
+
+export const OG_IMAGE = {
+  url: "/opengraph-image",
+  width: 1200,
+  height: 630,
+  alt: "Carolina Franco Brito — psicologia para gênero, sexualidade e identidade",
+} as const;
 
 export const baseMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -24,6 +30,8 @@ export const baseMetadata: Metadata = {
     "psicólogo para pessoas trans",
     "terapia gênero e sexualidade",
     "psicólogo LGBT Florianópolis",
+    "psicólogo São José SC",
+    "psicoterapia Grande Florianópolis",
     "terapia online gênero",
     "psicoterapia afirmativa",
   ],
@@ -42,11 +50,13 @@ export const baseMetadata: Metadata = {
     siteName: SITE_NAME,
     title: "Carolina Franco Brito · Um lugar para ser visto por inteiro",
     description: DEFAULT_DESCRIPTION,
+    images: [OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Carolina Franco Brito · Um lugar para ser visto por inteiro",
     description: DEFAULT_DESCRIPTION,
+    images: [OG_IMAGE.url],
   },
   category: "health",
 };

@@ -164,6 +164,11 @@ export function Header() {
                 external={isLinkReady(site.whatsapp)}
                 variant="primary"
                 className="w-full"
+                tracking={{
+                  event: "generate_lead",
+                  location: "mobile_menu",
+                  method: "whatsapp",
+                }}
               >
                 Agendar primeira sessão
               </Button>

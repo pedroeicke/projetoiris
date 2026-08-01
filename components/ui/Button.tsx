@@ -10,6 +10,11 @@ type Props = {
   className?: string;
   /** links externos (WhatsApp/Doctoralia) abrem em nova aba */
   external?: boolean;
+  tracking?: {
+    event: string;
+    location: string;
+    method?: string;
+  };
 };
 
 const base =
@@ -28,14 +33,22 @@ export function Button({
   variant = "primary",
   className,
   external,
+  tracking,
 }: Props) {
   const classes = cn(base, variants[variant], className);
   const externalProps = external
     ? { target: "_blank", rel: "noopener noreferrer" }
     : {};
+  const trackingProps = tracking
+    ? {
+        "data-conversion-event": tracking.event,
+        "data-conversion-location": tracking.location,
+        "data-conversion-method": tracking.method,
+      }
+    : {};
 
   return (
-    <Link href={href} className={classes} {...externalProps}>
+    <Link href={href} className={classes} {...externalProps} {...trackingProps}>
       {children}
     </Link>
   );

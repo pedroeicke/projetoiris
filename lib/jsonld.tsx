@@ -1,5 +1,5 @@
 import { SITE_URL, SITE_NAME, DEFAULT_DESCRIPTION } from "@/lib/seo";
-import { faq } from "@/content/site";
+import { faq, site } from "@/content/site";
 
 /**
  * Dados estruturados (docs/seo.md). Sem inflar credenciais (conformidade CFP).
@@ -18,12 +18,13 @@ function JsonLd({ data }: { data: Record<string, unknown> }) {
 export function OrganizationJsonLd() {
   const data = {
     "@context": "https://schema.org",
-    "@type": ["MedicalBusiness", "Psychologist"],
+    "@type": ["MedicalBusiness", "Psychologist", "LocalBusiness"],
     "@id": `${SITE_URL}/#clinic`,
     name: SITE_NAME,
     description: DEFAULT_DESCRIPTION,
     url: SITE_URL,
-    medicalSpecialty: "Psychiatric",
+    telephone: `+${site.whatsappNumber}`,
+    medicalSpecialty: "PsychologicalTreatment",
     priceRange: "R$$",
     founder: {
       "@type": "Person",
@@ -35,14 +36,18 @@ export function OrganizationJsonLd() {
       },
     },
     areaServed: [
+      { "@type": "AdministrativeArea", name: "Grande Florianópolis" },
+      { "@type": "City", name: "São José" },
       { "@type": "City", name: "Florianópolis" },
       { "@type": "Country", name: "Brasil" },
     ],
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Florianópolis",
-      addressRegion: "SC",
-      addressCountry: "BR",
+      streetAddress: site.address.streetAddress,
+      addressLocality: site.address.city,
+      addressRegion: site.address.region,
+      postalCode: site.address.postalCode,
+      addressCountry: site.address.country,
     },
     availableService: {
       "@type": "MedicalTherapy",

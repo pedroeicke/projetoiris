@@ -4,6 +4,7 @@ import "./globals.css";
 import { baseMetadata } from "@/lib/seo";
 import { OrganizationJsonLd } from "@/lib/jsonld";
 import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
+import { ConversionEvents } from "@/components/analytics/ConversionEvents";
 
 // Display editorial — variável, com eixos opsz/SOFT/WONK para calor (design-system.md)
 const fraunces = Fraunces({
@@ -37,6 +38,7 @@ export default function RootLayout({
     <html lang="pt-BR" className={`${fraunces.variable} ${mulish.variable}`}>
       <body className="paper-grain font-sans antialiased">
         <OrganizationJsonLd />
+        <ConversionEvents />
         {/* Skip link para acessibilidade por teclado */}
         <a
           href="#conteudo"

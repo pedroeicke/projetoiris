@@ -23,6 +23,15 @@ export const site = {
     WHATSAPP_MESSAGE,
   )}`,
   doctoralia: "#", // placeholder — link Doctoralia
+  address: {
+    streetAddress:
+      "Avenida Marechal Castelo Branco, 65, Bloco B, Sala 205, Campinas",
+    city: "São José",
+    region: "SC",
+    postalCode: "88101-020",
+    country: "BR",
+    full: "Avenida Marechal Castelo Branco, 65, Bloco B, Sala 205, Campinas, São José, SC, 88101-020",
+  },
 } as const;
 
 export const nav = [
@@ -122,7 +131,8 @@ export const care = {
   items: [
     {
       label: "Onde",
-      value: "Online, para todo o Brasil, e presencial em Florianópolis.",
+      value:
+        "Presencial no endereço Avenida Marechal Castelo Branco, 65, Bloco B, Sala 205, Campinas, São José, SC, 88101-020 · online em todo o Brasil.",
     },
     {
       label: "Sessões",

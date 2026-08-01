@@ -12,6 +12,9 @@ export function FloatingWhatsApp() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Agendar uma conversa pelo WhatsApp"
+      data-conversion-event="generate_lead"
+      data-conversion-location="floating_whatsapp"
+      data-conversion-method="whatsapp"
       className="group fixed bottom-5 right-5 z-50 flex items-center gap-0 rounded-full bg-teal text-paper shadow-warm-lg ring-1 ring-tealDeep/40 transition-all duration-300 ease-warm hover:-translate-y-0.5 hover:bg-tealDeep focus-visible:outline-paper sm:bottom-7 sm:right-7"
     >
       <span className="grid size-14 place-items-center">
