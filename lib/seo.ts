@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = "https://irispsicologia.com";
+export const SITE_URL = "https://www.irispsicologia.com";
 
 export const SITE_NAME = "Carolina Franco Brito";
 
