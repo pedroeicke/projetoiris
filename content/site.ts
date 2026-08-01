@@ -154,28 +154,32 @@ export const faq = {
   title: "Antes de começar.",
   items: [
     {
-      q: "Preciso ser LGBTQIA+ para começar terapia?",
-      a: "Não. O atendimento é aberto a pessoas com diferentes demandas. Questões de gênero, sexualidade e identidade podem aparecer no processo, mas não precisam ser o motivo da procura.",
+      q: "Como funciona a psicoterapia online?",
+      a: "O atendimento online acontece por videochamada, em dia e horário previamente combinados. Antes da sessão, você recebe o link de acesso. Para participar, é importante estar em um local reservado e com conexão estável.",
     },
     {
-      q: "Atende adolescentes?",
-      a: "Sim. O atendimento a adolescentes é realizado com os cuidados éticos que essa fase exige, incluindo os combinados necessários com responsáveis. Não há atendimento infantil.",
+      q: "Como a privacidade é cuidada no atendimento online?",
+      a: "O sigilo profissional também se aplica aos atendimentos online. A plataforma e os demais recursos utilizados são escolhidos considerando a privacidade e a segurança das informações. Também é importante que a pessoa participe das sessões em um ambiente reservado.",
     },
     {
-      q: "É online ou presencial?",
-      a: "Os dois. O atendimento é online para todo o Brasil e presencial em Florianópolis. A modalidade leva em consideração preferência, disponibilidade e adequação clínica.",
+      q: "Qual plataforma é utilizada? Posso participar pelo celular?",
+      a: "As sessões são realizadas pelo Google Meet. O acesso pode ser feito pelo computador, tablet ou celular, desde que o aparelho tenha câmera e microfone funcionando e uma conexão estável com a internet.",
     },
     {
-      q: "Atende por convênio?",
-      a: "Não. No momento, o atendimento é particular.",
+      q: "Quanto tempo dura cada sessão e com que frequência elas acontecem?",
+      a: "As sessões têm duração aproximada de 50 minutos. Em geral, os encontros acontecem semanalmente, mas a frequência pode ser conversada de acordo com as necessidades do processo e as possibilidades de cada pessoa.",
     },
     {
-      q: "Emite laudos ou documentos psicológicos?",
-      a: "No momento, não são emitidos laudos ou documentos psicológicos para finalidades específicas. O atendimento oferecido é psicoterapia, e questões de gênero podem ser trabalhadas quando fizerem parte da sua demanda.",
+      q: "Aceita planos de saúde?",
+      a: "Os atendimentos são particulares e não há vínculo direto com planos de saúde.",
+    },
+    {
+      q: "Preciso ser LGBTQIA+ para começar a terapia?",
+      a: "Não. O atendimento é aberto a pessoas com diferentes histórias, experiências e demandas. A formação e a trajetória de pesquisa da psicóloga em gênero e sexualidade contribuem para uma escuta qualificada dessas questões quando elas fizerem parte do processo, sem que esse seja um requisito ou o único foco do atendimento.",
     },
     {
       q: "Como eu começo?",
-      a: "Você pode agendar uma primeira sessão pelo WhatsApp. Esse encontro inicial serve para compreender sua demanda, apresentar o formato do atendimento e avaliar as possibilidades de início do processo.",
+      a: "Você pode entrar em contato pelo botão de WhatsApp disponível no site. A partir desse primeiro contato, será combinado um dia e horário para a sessão inicial. Nesse encontro, você poderá falar sobre o que motivou a procura, conhecer melhor o funcionamento da psicoterapia, esclarecer dúvidas e conversar sobre a possibilidade de continuidade do acompanhamento.",
     },
   ],
 } as const;
