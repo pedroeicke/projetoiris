@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { footer, site } from "@/content/site";
+import Link from "next/link";
+import { footer, site, privacyPage } from "@/content/site";
 
 export function Footer() {
   return (
@@ -62,15 +63,23 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-2 border-t border-cream/15 pt-6 text-xs text-cream/75 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-14 flex flex-col gap-3 border-t border-cream/15 pt-6 text-xs text-cream/75 sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {new Date().getFullYear()} {site.founder}. Todos os
             direitos reservados.
           </p>
-          <p>
-            Atendimento psicológico conforme as diretrizes do Conselho Federal
-            de Psicologia.
-          </p>
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-5">
+            <Link
+              href={privacyPage.slug}
+              className="link-grow !text-cream hover:!text-amber focus-visible:outline-paper"
+            >
+              Política de privacidade
+            </Link>
+            <p>
+              Atendimento psicológico conforme as diretrizes do Conselho Federal
+              de Psicologia.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

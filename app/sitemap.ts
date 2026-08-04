@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/seo";
 import { editorialArticles } from "@/content/editorial";
-import { generoPage } from "@/content/site";
+import { generoPage, privacyPage } from "@/content/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -30,5 +30,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.65,
     })),
+    {
+      url: `${SITE_URL}${privacyPage.slug}`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
   ];
 }

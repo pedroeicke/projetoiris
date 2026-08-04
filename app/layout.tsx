@@ -4,6 +4,7 @@ import "./globals.css";
 import { baseMetadata } from "@/lib/seo";
 import { OrganizationJsonLd } from "@/lib/jsonld";
 import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
+import { GoogleTag } from "@/components/analytics/GoogleTag";
 import { ConversionEvents } from "@/components/analytics/ConversionEvents";
 
 // Display editorial — variável, com eixos opsz/SOFT/WONK para calor (design-system.md)
@@ -38,6 +39,7 @@ export default function RootLayout({
     <html lang="pt-BR" className={`${fraunces.variable} ${mulish.variable}`}>
       <body className="paper-grain font-sans antialiased">
         <OrganizationJsonLd />
+        <GoogleTag />
         <ConversionEvents />
         {/* Skip link para acessibilidade por teclado */}
         <a

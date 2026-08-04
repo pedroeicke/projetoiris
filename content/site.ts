@@ -251,3 +251,67 @@ export const generoPage = {
   ctaTitle: "Quando fizer sentido, você começa",
   ctaSub: "Marque um primeiro encontro pelo WhatsApp. A partir daí, o tempo é seu.",
 } as const;
+
+/**
+ * Política de privacidade (/politica-de-privacidade).
+ * Descreve o que o site realmente faz — se a medição mudar, este texto muda.
+ */
+export const privacyPage = {
+  slug: "/politica-de-privacidade",
+  title: "Política de privacidade",
+  lead: "Este site é informativo. Ele não possui formulários, não solicita informações clínicas e não coleta dados de saúde. Abaixo está, de forma direta, o que acontece com a sua navegação.",
+  updatedAt: "Atualizada em fevereiro de 2026",
+  sections: [
+    {
+      heading: "Quem é responsável",
+      paragraphs: [
+        "O site é mantido por Carolina Franco Brito, psicóloga inscrita no CRP 12/18469, responsável pelas decisões sobre o tratamento dos dados aqui descritos.",
+        "Para qualquer solicitação relacionada a esta política, o contato é o mesmo WhatsApp de agendamento, disponível nos botões do site.",
+      ],
+    },
+    {
+      heading: "Quais dados o site coleta",
+      paragraphs: [
+        "O site não tem formulário, cadastro, login ou área restrita. Você não precisa informar nome, e-mail, telefone ou qualquer dado pessoal para navegar.",
+        "O que existe é medição de publicidade: quando a visita chega por um anúncio do Google, um cookie registra que houve um clique em um botão de contato. Esse registro serve apenas para saber quantos contatos o anúncio gerou.",
+        "Essa medição é anônima e agregada. Ela não identifica quem você é, não guarda o que você leu no site e não registra nenhuma informação sobre saúde, gênero ou sexualidade.",
+      ],
+    },
+    {
+      heading: "O que este site não faz",
+      paragraphs: [
+        "Não há remarketing: você não será perseguido por anúncios deste site em outras páginas ou redes sociais.",
+        "Não há publicidade personalizada com base na sua navegação. Os sinais de personalização e de rastreamento entre dispositivos estão desativados na configuração da ferramenta de medição.",
+        "Não são enviados dados pessoais — como e-mail ou telefone, ainda que codificados — para plataformas de anúncio. O recurso conhecido como conversões aprimoradas está desativado.",
+        "A navegação não é vendida, compartilhada ou cedida a terceiros para formação de perfil comercial.",
+      ],
+    },
+    {
+      heading: "Cookies",
+      paragraphs: [
+        "O site utiliza cookies de mensuração publicitária do Google Ads, com a finalidade única de contabilizar contatos originados de anúncios.",
+        "Você pode bloquear ou apagar cookies a qualquer momento nas configurações do seu navegador. O site continua funcionando normalmente sem eles — nenhum conteúdo depende de cookie para ser exibido.",
+      ],
+    },
+    {
+      heading: "Contato pelo WhatsApp",
+      paragraphs: [
+        "Os botões de agendamento levam a uma conversa no WhatsApp. A partir do momento em que a conversa começa, ela ocorre dentro do aplicativo e segue as políticas de privacidade da Meta, empresa responsável pelo serviço.",
+        "O conteúdo dessa conversa e tudo o que venha a ser tratado em atendimento estão protegidos pelo sigilo profissional previsto no Código de Ética Profissional do Psicólogo. Esse sigilo é independente desta política e não é afetado por ela.",
+      ],
+    },
+    {
+      heading: "Seus direitos",
+      paragraphs: [
+        "A Lei Geral de Proteção de Dados (Lei nº 13.709/2018) garante a você, entre outros direitos, confirmar se há tratamento de dados, acessá-los, corrigi-los, solicitar sua eliminação e revogar consentimento.",
+        "Como o site não mantém cadastro nem base de dados de visitantes, na prática não há registro pessoal a ser acessado ou excluído. Ainda assim, qualquer pedido pode ser feito pelo canal de contato e será respondido.",
+      ],
+    },
+    {
+      heading: "Alterações desta política",
+      paragraphs: [
+        "Se a forma de medição do site mudar, este texto será atualizado junto. A data de atualização fica indicada no início desta página.",
+      ],
+    },
+  ],
+} as const;
